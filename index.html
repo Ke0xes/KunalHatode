@@ -438,6 +438,102 @@
             flex-shrink: 0;
         }
 
+        /* Client Portfolio */
+        .client-roles {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .client-role-card {
+            background: var(--white);
+            border: 1px solid var(--gray-200);
+            border-radius: 20px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+            box-shadow: var(--card-shadow);
+        }
+
+        .client-role-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--card-shadow-hover);
+        }
+
+        .role-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--gray-200);
+        }
+
+        .role-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            background: var(--primary-gradient);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .role-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 0.3rem;
+        }
+
+        .role-specialty {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+            background: var(--secondary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .client-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            align-items: center;
+        }
+
+        .client-tag {
+            background: var(--gray-100);
+            color: var(--text-secondary);
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: 1px solid var(--gray-200);
+            cursor: default;
+            white-space: nowrap;
+        }
+
+        .client-tag:hover {
+            background: var(--gray-200);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .client-tag.featured {
+            background: var(--primary-gradient);
+            color: white;
+            border-color: transparent;
+            font-weight: 600;
+        }
+
+        .client-tag.featured:hover {
+            transform: translateY(-2px) scale(1.05);
+            box-shadow: 0 8px 25px rgba(0, 122, 255, 0.3);
+        }
+
         /* Certifications */
         .certifications-grid {
             display: grid;
@@ -627,6 +723,20 @@
             .contact-info {
                 grid-template-columns: 1fr;
             }
+
+            .role-header {
+                flex-direction: column;
+                text-align: center;
+                gap: 0.5rem;
+            }
+
+            .role-icon {
+                margin: 0 auto;
+            }
+
+            .client-grid {
+                justify-content: center;
+            }
         }
 
         /* Scroll animations */
@@ -652,6 +762,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#competencies">Skills</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#clients">Clients</a></li>
                 <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -938,6 +1049,120 @@
                     <div class="job-description">
                         Lead Architect for customer centric Internet, MPLS and Cloud requirements. Lead financial evaluator of solution costing, bill of materials and human resourcing. Member of Cloud steering committee.
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Portfolio Section -->
+    <section id="clients" class="section scroll-reveal">
+        <div class="section-header">
+            <h2 class="section-title">Client Portfolio</h2>
+            <p class="section-subtitle">
+                Trusted by leading organizations across multiple industries - from Fortune 500 companies to government agencies and prestigious brands.
+            </p>
+        </div>
+        <div class="client-roles">
+            <div class="client-role-card">
+                <div class="role-header">
+                    <div class="role-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="role-title">Lead Technical Architect & Financial Analyst</h3>
+                        <p class="role-specialty">WAN & Security Architecture</p>
+                    </div>
+                </div>
+                <div class="client-grid">
+                    <div class="client-tag">Accor Hotels</div>
+                    <div class="client-tag">Anglian Water</div>
+                    <div class="client-tag">Bargain Booze</div>
+                    <div class="client-tag">BHS</div>
+                    <div class="client-tag featured">Brawn GP – Honda F1</div>
+                    <div class="client-tag">Cath Kidston</div>
+                    <div class="client-tag">Civica</div>
+                    <div class="client-tag">Clugston</div>
+                    <div class="client-tag">Costcutters</div>
+                    <div class="client-tag">Dairy Farmers</div>
+                    <div class="client-tag featured">Greggs</div>
+                    <div class="client-tag">Guinness Partnership</div>
+                    <div class="client-tag">Hilson Moran</div>
+                    <div class="client-tag">Medica</div>
+                    <div class="client-tag">Mondial Insurance</div>
+                    <div class="client-tag">Moss Bros</div>
+                    <div class="client-tag">Nochex</div>
+                    <div class="client-tag featured">Red Bull Racing</div>
+                    <div class="client-tag">Royal British Legion</div>
+                    <div class="client-tag">Vision Express</div>
+                    <div class="client-tag featured">Volkswagen</div>
+                    <div class="client-tag">Wales & West Utilities</div>
+                </div>
+            </div>
+
+            <div class="client-role-card">
+                <div class="role-header">
+                    <div class="role-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                            <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="role-title">Lead Technical Architect & Financial Analyst</h3>
+                        <p class="role-specialty">Cloud & Security Architecture</p>
+                    </div>
+                </div>
+                <div class="client-grid">
+                    <div class="client-tag featured">British Museum</div>
+                    <div class="client-tag featured">Cineworld</div>
+                    <div class="client-tag featured">Disney</div>
+                    <div class="client-tag">Fulham FC</div>
+                    <div class="client-tag">Hobby Craft</div>
+                    <div class="client-tag">Holidaybreak</div>
+                    <div class="client-tag">Internova</div>
+                    <div class="client-tag featured">Kellogg's</div>
+                    <div class="client-tag">Littlewoods</div>
+                    <div class="client-tag">Manchester Airport</div>
+                    <div class="client-tag featured">NHS Dudley</div>
+                    <div class="client-tag">Racing Post</div>
+                    <div class="client-tag featured">RNLI</div>
+                    <div class="client-tag">Swinton Insurance</div>
+                    <div class="client-tag">Trinity Mirror Group</div>
+                </div>
+            </div>
+
+            <div class="client-role-card">
+                <div class="role-header">
+                    <div class="role-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                            <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="role-title">Operational Lead & Managing Consultant</h3>
+                        <p class="role-specialty">Security Engineering and Operations</p>
+                    </div>
+                </div>
+                <div class="client-grid">
+                    <div class="client-tag featured">Equifax</div>
+                    <div class="client-tag featured">Toyota Belgium</div>
+                    <div class="client-tag featured">Aston Martin</div>
+                    <div class="client-tag featured">European Space Agency</div>
+                    <div class="client-tag">Tullow Oil</div>
+                    <div class="client-tag featured">Morrisons</div>
+                    <div class="client-tag featured">Royal Bank of Scotland</div>
+                    <div class="client-tag featured">Central Bank of Malaysia</div>
+                    <div class="client-tag featured">Worldpay</div>
+                    <div class="client-tag">Permanent TSB</div>
+                    <div class="client-tag">Saudi Telecom Company</div>
+                    <div class="client-tag">Ziraat Bank</div>
+                    <div class="client-tag">Rosneft</div>
+                    <div class="client-tag">Qatar Ministry of Interior</div>
+                    <div class="client-tag">Turkey Ministry of Energy</div>
+                    <div class="client-tag featured">Telefonica</div>
+                    <div class="client-tag">Tele2</div>
+                    <div class="client-tag">Three UK</div>
                 </div>
             </div>
         </div>
